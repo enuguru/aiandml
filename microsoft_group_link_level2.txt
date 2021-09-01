@@ -1,0 +1,26 @@
+
+
+
+       microsoft group link for level 2
+
+       https://teams.microsoft.com/l/team/19%3anJ69YONGvMNLcv06_ZjdBH-XoahpMDNyOT3x_UUWMzQ1%40thread.tacv2/conversations?groupId=79a4a25f-7364-44a3-bb85-968e655c5106&tenantId=258ac4e4-146a-411e-9dc8-79a9e12fd6da
+
+
+       assocation rule mining - more used by ML
+       frequent pattern mining - data mining and data warehousing 
+       market basket analysis -  sales and marketing and top management
+
+       models
+
+       algorithm -  apriori, FP Growth, ECLAT 
+
+
+
+
+
+
+
+
+
+
+

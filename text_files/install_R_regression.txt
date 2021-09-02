@@ -1,0 +1,25 @@
+#install.packages("ggplot2")
+salaryframe <- read.csv(file = 'C:/Users/Gururajan/artificial_intelligence_and_machine_learning/datasets/salary_regression_train.csv')
+head(salaryframe)
+salaryframe
+linearMod <- lm(Salary ~ YearsExperience, data=salaryframe)
+linearMod
+summary(linearMod)
+x <- salaryframe[1]
+y <- salaryframe[2]
+x
+y
+
+
+# plot a scatter plot
+plot(salaryframe$YearsExperience,salaryframe$Salary,
+     main='Regression for YearsExperience and Salary',
+     xlab='YearsExperience',ylab='Salary')
+
+# plot a regression line
+abline(lm(Salary~YearsExperience,data=salaryframe),col='blue')
+
+
+library(ggplot2)
+
+#ggplotRegression(lm(Salary ~ YearsExperience, data = salaryframe))

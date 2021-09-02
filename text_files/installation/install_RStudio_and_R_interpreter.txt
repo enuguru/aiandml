@@ -1,0 +1,16 @@
+
+
+Rstudio for windows
+https://www.rstudio.com/products/rstudio/download/#download
+the .exe files gets downloaded to the C:\Users\Username\Downloads
+you can choose the D drive to install since it totally 1.1 Gb
+choose the default options
+
+
+
+
+install R for windows 10
+https://mirror.niser.ac.in/cran/
+the .exe files gets downloaded to the C:\Users\Username\Downloads
+you can choose the D drive to install since it totally 1.1 Gb
+choose the default options

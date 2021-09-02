@@ -1,0 +1,29 @@
+
+
+      course introduction and agenda - 
+
+      trainer introduction
+      what are the benefits for you of doing this course ?
+                           walk down the memory lane, recap of mathemeatics concepts
+                           coding skills
+                           get a certificate from L & D head
+                           you can have your skills mapped
+                           use this in your quarterly, yearly appraisal for Learning and Development
+                           goal 
+      pre-requisites for the course - beginners knowledge of python, some liking for mathematics at
+                                      junior college level, habit of analysis, some knowledge of R,
+                                      some knowledge of excel is helpful
+      how will you get the recording
+      course feedback  - wilearn-self-quicklinks-evalutations-select pending evaluations
+      microsoft teams group link
+      table of contents for Level 1 only
+      table of contents for the whole course - Level 1, Level 2A, Level 3A, Level 3B
+      github link - github.com/enuguru
+      software instalation on the desktop - anaconda, git and vim
+      machine learning,python and R cheat sheets
+      who are the leaders in machine learning community
+      what are the blog pages, certifications, books and courses for ML ?
+      
+
+
+

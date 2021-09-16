@@ -1,0 +1,9 @@
+
+
+three ways of doing AI and ML
+
+1. using cloud computing - AWS, AZURE and GOOGLE CLOUD
+2. by using desktop tools - PC tools - Tableau, SAS, SPSS, Power Builder
+3. using programming - Python, C++ and R - 
+      a) with pure code (without using frameworks)
+      b) with frameworks (pandas, scikit-learn, seaborn, matplotlib...)

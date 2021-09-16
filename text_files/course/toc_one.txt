@@ -28,4 +28,37 @@ rescaling
 
 
 
+all the installation and issues 1st day
+anaconda, git, vim editor
+machine learning overview
+broad AI and Narrow AI, diff ds, ml, ai, dm
+top leaders in AI
+what is learning
+cross validation, datasets - what are the important datasets
+how to build and run ML models ?
+jupyter notebook - locally
+vim editor, spyder, or google colab
+types of learning 
+types of ML techniques 
+types of algorithms
+classifcation, regression and clustering - 3 techniques
+KNN, SLR. K-Means
+performance and model selection
+Natural language processing basics
+and sentiment analysis
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

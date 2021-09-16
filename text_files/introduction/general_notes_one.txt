@@ -1,0 +1,67 @@
+
+
+label encoder
+one hot encoder
+
+ok   0
+good 1
+very good 2
+best 3
+
+
+best  0
+good  1
+ok    2
+very good  3
+
+
+statsmodels equalent of pandas and scikit learn
+
+
+types of files
+--------------
+csv
+tsv
+txt
+excel
+json
+
+
+very small 1000
+small   1000 to 10000
+medium  10000 to 3 laksh
+big        3 laksh to 1 million
+huge       more than 1 million
+
+
+
+pandas
+scikit learn
+statsmodels
+
+matplotlib
+seaborn
+plotly
+dash
+
+numpy
+scipy
+
+jupyter notebook
+anaconda
+
+opencv c++,python
+NLTK
+textblob
+
+
+
+
+
+
+
+
+
+
+
+

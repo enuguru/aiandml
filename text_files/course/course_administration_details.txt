@@ -23,6 +23,14 @@
       machine learning,python and R cheat sheets
       who are the leaders in machine learning community
       what are the blog pages, certifications, books and courses for ML ?
+
+
+      requirements
+
+      i7, at least 8GB RAM, SSD 256 or 512 preferable
+      i5 is ok
+      any latest windows 10 version any latest ok
+      
       
 
 

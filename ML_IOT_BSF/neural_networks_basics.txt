@@ -1,0 +1,114 @@
+
+# Introduction to TensorFlow and Keras
+# TensorFlow and tf.keras
+import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras.layers import Conv2D, MaxPooling2D, Dropout, Flatten, Dense
+
+# Commonly used modules
+import numpy as np
+import os
+import sys
+
+# Images, plots, display, and visualization
+import matplotlib.pyplot as plt
+import pandas as pd
+import seaborn as sns
+import cv2
+import IPython
+from six.moves import urllib
+
+print(tf.__version__)
+
+A simple classification model using Keras with Cloud TPUs
+
+https://colab.research.google.com/github/tensorflow/tpu/blob/master/tools/colab/classification_iris_data_with_keras.ipynb#scrollTo=0DrKs2PGrIhY
+
+
+simple cnn model
+
+https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/images/cnn.ipynb#scrollTo=JWoEqyMuXFF4
+
+
+simple rnn model
+
+https://colab.research.google.com/github/tensorflow/docs/blob/snapshot-keras/site/en/guide/keras/rnn.ipynb#scrollTo=3987993cb7be
+
+
+text generation using RNN
+
+https://colab.research.google.com/github/tensorflow/text/blob/master/docs/tutorials/text_generation.ipynb#scrollTo=UK-hmKjYVoll
+
+
+classification of iris dataset
+
+https://colab.research.google.com/github/tensorflow/tpu/blob/master/tools/colab/classification_iris_data_with_keras.ipynb#scrollTo=2xnX-NTsFQQa
+
+
+text classification - movie reviews IMDB
+https://colab.research.google.com/github/tensorflow/hub/blob/master/examples/colab/tf2_text_classification.ipynb#scrollTo=tXSGrjWZ-llW
+
+
+Image classification simple - class_names = ['airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck']
+https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/images/cnn.ipynb#scrollTo=K3PAELE2eSU9
+
+
+Image classification simple - class_names = ['airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck']
+https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/images/cnn.ipynb#scrollTo=0LvwaKhtUdOo
+
+
+deep learning prediction
+https://colab.research.google.com/github/tensorflow/tpu/blob/master/tools/colab/classification_iris_data_with_keras.ipynb#scrollTo=0DrKs2PGrIhY
+
+
+answer to "predicted_classes" error
+https://stackoverflow.com/questions/68836551/keras-attributeerror-sequential-object-has-no-attribute-predict-classes
+
+
+MNIST in Keras
+https://colab.research.google.com/github/AviatorMoser/keras-mnist-tutorial/blob/master/MNIST%20in%20Keras.ipynb#scrollTo=sXQhqt7bqGCU
+change code like this is the error cell
+predict_x=model.predict(X_test) 
+predicted_classes=np.argmax(predict_x,axis=1)
+
+
+Classify movie reviews: binary classification
+https://colab.research.google.com/github/markdaoust/models/blob/basic-text-classification/samples/core/get_started/basic_text_classification.ipynb#scrollTo=6hXx-xOv-llh
+
+1st error - make these changes
+change 'acc' to 'accuracy'
+change 'val_acc' to 'val_accuracy'
+
+
+Basic classification: Classify images of clothing
+https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/keras/classification.ipynb#scrollTo=VflXLEeECaXC
+
+Simple MNIST convnet
+https://colab.research.google.com/github/keras-team/keras-io/blob/master/examples/vision/ipynb/mnist_convnet.ipynb#scrollTo=o56wILz0VDau
+
+keras code examples
+https://keras.io/examples/
+
+MNIST Dataset
+https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/quickstart/beginner.ipynb#scrollTo=cnqOZtUp1YR_
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

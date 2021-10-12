@@ -10,6 +10,7 @@ from sklearn.metrics import roc_auc_score
 from sklearn.metrics import confusion_matrix
 from keras.models import Sequential
 from keras.layers import Dense
+import numpy as np
 
 # generate and prepare the dataset
 def get_data():
@@ -38,13 +39,16 @@ trainX, trainy, testX, testy = get_data()
 # fit model
 model = get_model(trainX, trainy)
 
+#predict_x=model.predict(X_test) 
+#classes_x=np.argmax(predict_x,axis=1)
 # predict probabilities for test set
 yhat_probs = model.predict(testX, verbose=0)
 # predict crisp classes for test set
-yhat_classes = model.predict_classes(testX, verbose=0)
+#yhat_classes = model.predict_classes(testX, verbose=0)
+yhat_classes = np.argmax(yhat_probs, axis =1)
 # reduce to 1d array
 yhat_probs = yhat_probs[:, 0]
-yhat_classes = yhat_classes[:, 0]
+#yhat_classes = yhat_classes[:, 0]
 
 # accuracy: (tp + tn) / (p + n)
 accuracy = accuracy_score(testy, yhat_classes)

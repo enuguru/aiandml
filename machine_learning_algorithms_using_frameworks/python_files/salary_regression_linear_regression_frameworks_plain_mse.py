@@ -7,7 +7,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
-
+from sklearn.metrics import mean_squared_error
+from sklearn import model_selection
 
 # step 1: reading the data and splitting it to input and output
 dataset = pd.read_csv('../../datasets/salary_regression_train.csv')
@@ -51,4 +52,6 @@ print(input_test)
 predicted_output = model.predict(input_test)
 print("\nThe output (salary) for the test input is as follows \n")
 print(predicted_output)
-mean_squared_error(y_true, y_pred)
+print(mean_squared_error(output_test, predicted_output,squared=False))
+MSE = np.sqrt(np.square(np.subtract(output_test,predicted_output)).mean())
+print(MSE)

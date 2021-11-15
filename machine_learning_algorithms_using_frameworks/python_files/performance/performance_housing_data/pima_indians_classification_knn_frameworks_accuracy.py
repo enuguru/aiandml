@@ -9,7 +9,7 @@ dataframe = read_csv(filename, names=names)
 array = dataframe.values
 X = array[:,0:8]
 Y = array[:,8]
-kfold = KFold(n_splits=10, random_state=None,shuffle=False)
+kfold = KFold(n_splits=5, random_state=None,shuffle=False)
 model = KNeighborsClassifier()
 scoring = 'accuracy'
 results = cross_val_score(model, X, Y, cv=kfold, scoring=scoring)

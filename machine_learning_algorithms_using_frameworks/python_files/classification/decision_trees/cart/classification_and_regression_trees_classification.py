@@ -10,7 +10,7 @@ array = dataframe.values
 X = array[:,0:8]
 Y = array[:,8]
 print(Y)
-kfold = KFold(n_splits=10, random_state=7)
+kfold = KFold(n_splits=10)
 model = DecisionTreeClassifier()
 results = cross_val_score(model, X, Y, cv=kfold)
 print(results.mean())

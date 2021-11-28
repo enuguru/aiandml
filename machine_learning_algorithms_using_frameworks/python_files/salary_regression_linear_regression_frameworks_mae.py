@@ -57,3 +57,11 @@ scoring = 'neg_mean_absolute_error'
 results = model_selection.cross_val_score(model, input_train, output_train, cv=kfold, scoring=scoring)
 print(results)
 print("MAE: %.3f (%.3f)" % (results.mean(), results.std()))
+
+
+
+
+
+
+
+

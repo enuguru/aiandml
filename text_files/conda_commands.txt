@@ -1,0 +1,14 @@
+
+
+anaconda -V
+anaconda --version
+conda list
+conda info
+conda info -e
+conda info -envs
+conda update conda
+conda update anaconda
+conda update 'name of package'
+conda config --get
+conda config --get channels
+conda config --add channels pandas

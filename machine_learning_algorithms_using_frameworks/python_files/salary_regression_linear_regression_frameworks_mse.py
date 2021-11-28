@@ -63,3 +63,11 @@ results = model_selection.cross_val_score(model, input_train, output_train, cv=k
 print(results)
 print("MSE: %.3f (%.3f)" % (results.mean(), results.std()))
 print(np.sqrt(-1*(results.mean())))
+
+
+
+
+
+
+
+

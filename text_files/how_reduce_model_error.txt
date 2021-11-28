@@ -1,0 +1,14 @@
+
+
+how to reduce the error ?
+
+1. do better pre-processing of data - normalization, standarization and 
+                                      encoding
+
+2. tune the model (adjust the parameters of the model)
+
+3. use a differnt model
+
+4. grid search - a method for choosing the parameter values
+
+5. do feature selection or feature reduction

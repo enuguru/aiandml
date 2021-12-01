@@ -1,0 +1,127 @@
+
+AIML Level 2 - Table of Contents
+--------------------------------
+
+Decision Trees
+  - Introduction to decision trees
+  - Input Categorical and Output Categorical
+  - Input Continuous and Outout Categorical
+  - Input Categorical and Output Continuous
+  - Input Continuous and Output Continuous
+  - Using Gini index and Information gain 
+    in all the above four cases
+  - Advantages and dis-advantages of decision trees
+  - some advice on using decision trees
+  - decision tree regression
+  - decision tree with Playing tennis dataset
+  - decision tree with Iris dataset
+  - decision tree with Titanic dataset
+  - decision tree for fake currenc detection dataset
+  - decision tree for manual dataset
+
+saving and retrieving a model
+
+How to save any model using a framework
+How to retrieve a model using a framework
+
+
+Naive Bayes
+  - Overview of Naive Bayes
+  - Naive Bayes with basketball dataset
+  - using SKlearn and iris dataset
+  - using a NLP example - classifying a document
+
+
+Multiple Variate Linear Regression
+Polynomial Regression
+Non linear Regression
+Regularized Linear Regression
+  - Ridge Regression
+  - Lasso Regression
+  - Elastic Net Regression
+  - 
+(Owen Zheng, the Chief Product Officer at DataRobot said :
+If you are using regression without regularization, you have to be very special)
+
+model performance
+Bias variance calculations
+Bias Variance tradeoff
+model selection and tuning hyper parameters
+model performance analysis
+
+Association Rule Mining - Market Basket Analysis - Frequent Pattern Mining
+  - Apriori algorithm
+  - FP Growth - Frequent Pattern Growth
+  - ECLAT - Equalence Transformation
+  - When do you use Association Rule Mining
+  - Case studies in association rule mining with retail dataset
+
+
+Recommendation
+ - Introduction to recommendation
+ - Different types of recommendation
+ - difference between content based recommendation
+   and collaborative filtering
+ - worked out example for User-User Collaborative Filtering
+ - worked out example for Item-Item Collaborative Filtering
+ - Working of Collaborative filtering 
+ - Working of Content Based filtering works
+
+
+Ensemble Algorithms
+ - Bagging
+ - Boosting
+ - Types of boosting 
+ - AdaBoost (Adaptive Boosting) algorithm
+ - Gradient Boosting algorithm
+ - XG Boost algorithm
+ - Random Forest
+ - Introduction and usage of Random Forest
+ - EXTRA Trees - EXTremely RAndomized Trees
+ - Importance of Random Forests
+
+
+Outlier Detection
+   - Outlier and Outlier Analysis
+   - Outlier Detection Methods
+   - Statistical Approaches
+   - Proximity-Base Approaches
+   - Clustering-Base Approaches
+   - Classification Approaches
+   - Mining Contextual and Collective Outliers
+   - Outlier Detection in High Dimensional Data
+
+
+Time Series Analyis
+  - Introduction to Time Series Analysis
+  - Types of time series analysis
+  - Trend, Cyclical, Seasonal and Random
+  - Moving Average
+  - Trend analysis
+  - Linear Trend Model
+  - Quadratic Trend Model
+  - Auto Regressive Modeling
+  - case studies in time series analysis
+  - applications of time series analysis
+
+Dimensionality Reduction
+  - Introduction to Dimensionality Reduction
+  - feature engineering, feature reduction, feature selection
+  - different between feature reduction and feature reduction
+  - feature selection and feature reduction analysis
+  - Principal Component Analysis - PCA
+  - Linear Discriminant Analysis - LDA
+  - Need for dimensionality reduction
+  - 
+
+Support Vector Machines
+  - Working of SVM
+  - kernel density estimation
+
+Density Estimation
+  - Overview of Kernel Density Estimation - KDE
+  - Kernel Density Estimation (KDE)
+  - Gaussian Mixture Model
+  - Maximum Likelihood Estimation
+  - Latent Dirichlet Allocation
+  - Kullback Liebler Divergence

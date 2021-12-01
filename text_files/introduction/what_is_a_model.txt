@@ -1,0 +1,65 @@
+
+columns of the dataset
+
+what is a model ? (in a computer)
+
+model can be any of these things
+
+a) can be a table in a database
+b) can be a table or a two dimensional array of structures or functions
+c) can be a mathematical equation - y = mx + c or ax^2 + bx + c
+d) can be a sequence of if-else-if statements
+e) can be a data structure like a binary tree or a multi-way tree
+
+
+three ways in which to do ML
+
+a) cloud
+b) tools
+c) programming route
+   a) pure program
+   b) using framework
+
+
+supervised learning
+
+credit risk assessment dataset
+diabetes prediction dataset
+housing price prediction dataset
+housing sale prediction
+
+unsupervised learning
+
+retail customer segmenation - clustering
+bank customer grouping
+
+
+classification is predicting the category of output
+
+regression is predicting a continuously varying value
+
+clustering is grouping the objects or data
+
+
+
+
+
+regression - nature of the relationship
+
+correlation - is there a relationship
+
+causation - 100 % correlation
+
+
+
+seven steps
+
+1) Data acquistion
+2) Data inspection
+3) Data cleaning
+4) Data pre-processing
+5) Data Analysis
+6) Data Modeling - Machine Learning - heart of AI
+7) Data Visualization
+
+

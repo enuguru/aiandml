@@ -19,10 +19,10 @@ Decision Trees
   - decision tree for fake currenc detection dataset
   - decision tree for manual dataset
 
-saving and retrieving a model
 
-How to save any model using a framework
-How to retrieve a model using a framework
+saving and retrieving a model
+How to save any model using a python framework
+How to retrieve a model using a python framework
 
 
 Naive Bayes
@@ -48,6 +48,7 @@ Bias variance calculations
 Bias Variance tradeoff
 model selection and tuning hyper parameters
 model performance analysis
+
 
 Association Rule Mining - Market Basket Analysis - Frequent Pattern Mining
   - Apriori algorithm
@@ -104,6 +105,7 @@ Time Series Analyis
   - case studies in time series analysis
   - applications of time series analysis
 
+
 Dimensionality Reduction
   - Introduction to Dimensionality Reduction
   - feature engineering, feature reduction, feature selection
@@ -112,7 +114,7 @@ Dimensionality Reduction
   - Principal Component Analysis - PCA
   - Linear Discriminant Analysis - LDA
   - Need for dimensionality reduction
-  - 
+
 
 Support Vector Machines
   - Working of SVM

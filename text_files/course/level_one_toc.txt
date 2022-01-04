@@ -1,0 +1,56 @@
+
+
+
+
+
+table of contents  AIML Level 1 
+
+
+
+what is AI ? 
+what is thinking ? what is learning ?
+learning from experience
+who are the AI leaders
+what are the different types of learning ?
+supervised, un-supervised, semi-supervised and reinforcement
+
+
+
+what is the different between learning, model and algorithm ?
+model is also called an Machine Learning approach, or Machine Learning Technique
+14 different types of techniques
+algorithms - around 10 algorithms in each model / technique
+
+
+classification model
+10 types of algorithms in classification model
+KNN algorithm - K-Nearest Neighbor algorithm
+
+
+regression model
+types of regression
+simple linear regression - only dealt with
+gradient descent how does it work
+
+
+what are the datasets seen
+
+what is training, testing and 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

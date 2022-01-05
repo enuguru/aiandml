@@ -6,11 +6,28 @@
 table of contents  AIML Level 1 
 
 
+Introduction to the AIML Level 1 program
+pre-requisites
+what are the programs after AI and ML Level 1
 
-what is AI ? 
+what is AI and ML? 
+
+what are the three ways of learning AI? - cloud way, tools way and programming way
+situation in which each method can be used
+
 what is thinking ? what is learning ?
+when do we say that we are learning ?
+a typical object identificaiton example
+how do humans learn ? how can machines learn ?
+y = f(x) model
+what are the terminologies in machine learning 
+training, testing, validation, model
+what is a model in real terms ?
+
+
 learning from experience
 who are the AI leaders
+differences between Data Science, AI, ML and Data Mining
 what are the different types of learning ?
 supervised, un-supervised, semi-supervised and reinforcement
 
@@ -21,19 +38,56 @@ model is also called an Machine Learning approach, or Machine Learning Technique
 14 different types of techniques
 algorithms - around 10 algorithms in each model / technique
 
+how is data represented in AI ?
+what are the diffferent formats of data
+.txt, .csv, .json, .tsv, .xlsx
+
+
+performance metrics
+what are the parameters and hyper parameters ?
+how to choose the best parameters and hyper parameters ?
+what are the performance metrics ?
+how to choose the performance metrics ?
+
+how to choose the best model ?
+how to choose the best algoritm given we have chosen the technique
+
+
 
 classification model
 10 types of algorithms in classification model
 KNN algorithm - K-Nearest Neighbor algorithm
+what is K value ? How to choose the K value ?
+Impact of choosing a large or small K value
+preformance metrics in classifcation model
+how to choose the hyper parameters in KNN ?
+accuracy, precision and AUC
 
 
 regression model
 types of regression
-simple linear regression - only dealt with
+simple linear regression - explained fully
 gradient descent how does it work
+how to choose the hyper parameters for SLR like lambda ?
+
+clustering model
+overview of clustering, how to cluster ?
+overview of K-Means clustering
+how does K-Means clustering work ?
+how to choose value of K ?
+WCSS - Within Cluster Sum of Squares
+how to choose the hyper parameters for clustering ?
 
 
-what are the datasets seen
+what are the casestudies and different datasets used in the program
+
+Identification of flowers in the garden
+Admission to a university - full dataset and reduced dataset
+Finding the price of the house - full dataset and reduced dataset
+Diabetes prediction dataset
+Credit risk assessment
+Stock price prediction
+
 
 what is training, testing and 
 

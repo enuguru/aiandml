@@ -1,6 +1,9 @@
+
+
 #!/usr/bin/env python
 #The dict {} in python such as:my_information = {'name': 'Pusheen the Cat', 'country': 'USA', 'favorite_numbers': [42, 105]}
 #name -> Pusheen the Cat (Key is name , value is Pusheen the cat)
+
 def Apriori_gen(Itemset, lenght):
     """Too generate new (k+1)-itemsets can see README Join Stage"""
     canditate = []

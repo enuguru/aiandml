@@ -127,3 +127,5 @@ Density Estimation
   - Maximum Likelihood Estimation
   - Latent Dirichlet Allocation
   - Kullback Liebler Divergence
+
+overview of ranking algorithms

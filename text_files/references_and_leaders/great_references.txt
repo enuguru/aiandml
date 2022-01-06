@@ -1,0 +1,34 @@
+
+
+
+andrew ng slides
+https://github.com/qinhanmin2014/machine-learning-Andrew-Ng/tree/master/slides
+
+andrew ng course notes
+https://www.holehouse.org/mlclass/
+
+andrew ng coursera course
+https://www.youtube.com/watch?v=PPLop4L2eGk&list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN
+
+andrew ng deep learning course
+https://www.youtube.com/watch?v=CS4cs9xVecg&list=PLpFsSf5Dm-pd5d3rjNtIXUHT-v7bdaEIe
+
+
+andrej karpathy main page
+
+https://karpathy.ai/
+
+Yoshio Bengio
+https://yoshuabengio.org/
+
+Jürgen Schmidhuber 
+https://people.idsia.ch/~juergen/
+
+geoffery hinton homepage
+https://www.cs.toronto.edu/~hinton/
+
+
+
+
+
+

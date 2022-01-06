@@ -1,0 +1,7 @@
+
+
+
+Those scores are negative MSE scores, i.e. negate them and you get the MSE. The thing is that GridSearchCV, by convention, always tries to maximize its score so loss functions like MSE have to be negated.
+
+The unified scoring API always maximizes the score, so scores which need to be minimized are negated in order for the unified scoring API to work correctly. The score that is returned is therefore negated when it is a score that should be minimized and left positive if it is a score that should be maximized.
+

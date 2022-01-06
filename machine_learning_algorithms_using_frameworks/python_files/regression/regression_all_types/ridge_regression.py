@@ -12,6 +12,8 @@ Y = array[:,13]
 num_folds = 10
 kfold = KFold(n_splits=10,shuffle=True)# random_state=7)
 model = Ridge()
+#results = model.predict(Xtest)
+print(results)
 scoring = 'neg_mean_squared_error'
 results = cross_val_score(model, X, Y, cv=kfold, scoring=scoring)
 print(results.mean())

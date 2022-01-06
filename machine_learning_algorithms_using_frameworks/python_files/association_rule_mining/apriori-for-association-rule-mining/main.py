@@ -109,7 +109,8 @@ if (min_sup <= 0):
     print ("Error: Minimum support count value should be positive")
     sys.exit()
 
-min_conf = int(sys.argv[2])
+#min_conf = int(sys.argv[2])
+min_conf = float(sys.argv[2])
 if (min_conf <= 0):
     print ("Error: Minimum confidence value should be positive")
     sys.exit()

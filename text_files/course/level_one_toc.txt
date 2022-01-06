@@ -1,10 +1,7 @@
 
 
 
-
-
 table of contents  AIML Level 1 
-
 
 Introduction to the AIML Level 1 program
 pre-requisites
@@ -85,7 +82,7 @@ Identification of flowers in the garden
 Admission to a university - full dataset and reduced dataset
 Finding the price of the house - full dataset and reduced dataset
 Diabetes prediction dataset
-Credit risk assessment
+Credit risk assessment - pay the loan or not 
 Stock price prediction
 
 

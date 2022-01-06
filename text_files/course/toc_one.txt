@@ -1,9 +1,6 @@
 
 
-day 1
-
-agenda for 5 days
-agenda for today - day 1
+AIML Level 1 - Table of Contents
 
 installation of anaconda
 installation of vim editor
@@ -14,37 +11,73 @@ how to run programs on google cloud
 how to save programs on google cloud
 program in the cloud, data in the cloud
 program in the cloud, data in the local PC
-program in the local PC, data in the local PC
-program in the local PC, data in the cloud
+all four combinations
 
 
-activities
-one hot encoding
-label encoding
-standarization
-normalization
-binarization
-rescaling
-
-
-
-all the installation and issues 1st day
-anaconda, git, vim editor
 machine learning overview
-broad AI and Narrow AI, diff ds, ml, ai, dm
-top leaders in AI
-what is learning
-cross validation, datasets - what are the important datasets
+difference between AI, data science, machine learning, data mining 
+what is broad AI and Narrow AI
+examples for each type of AI
+
+three ways of doing AI and ML
+a) using cloud computing and its tools
+b) using desktop tools
+c) using the programming route
+   a) using programming from scratch
+   b) using programming using python frameworks
+
+top leaders in AI community and how they help the field grow
+what is learning - 
+
+
+what is cross validation ?
+Types of cross validation
+holdout method, K-Fold cross validation and LOOCV
+LOOCN - Leave One Out Cross Validation
+Random Sub Sampling K-Fold cross validation
+performance and model selection
+
+datasets - what are the important datasets
 how to build and run ML models ?
 jupyter notebook - locally
 vim editor, spyder, or google colab
-types of learning 
-types of ML techniques 
+What is the difference between a learning type, model and an algorithm ?
+types of learning supervised, un-supervised, semi-supervised and
+                   reinforcment learning
+
+types of ML techniques or ML models 14 different models - Classification, Regression, Clustering, Recommendation, Association Rule Mining, Dimensionality Reduction, Density Estimation, Ensemble Algorithm, Outlier Detection, Time Series Analysis, Ranking, Genetic Algorithms, Reinforcement Learning and Deep Learning
+
 types of algorithms
 classifcation, regression and clustering - 3 techniques
-KNN, SLR. K-Means
-performance and model selection
+
+overview of KNN algorithm
+important aspects of KNN algorithm
+working of KNN
+how to build a classification model with KNN algorithm
+how to choose the K value
+what is impact of K value on performance
+
+important aspects of Simple Linear Regression algorithm
+working of Simple Linear Regression 
+how to build a regression model with Simple Linear Regression algorithm
+how to choose the alpha - learning rate value
+what is impact of alpha - learning rate on performance
+
+
+important aspects of clustering algorithm
+a simple manual case study
+working of clustering algorithm 
+how to build a regression model with clustering  algorithm
+how to choose the K value - number of clusters - learning rate value
+what is impact of K value - number of clusters on performance
+
+
+
 Natural language processing basics
+Tools used in NLP and their installation
+different tasks in NLP
+How to use ML algorithms for doing NLP tasks
+sentiment analysis and document classification
 and sentiment analysis
 
 

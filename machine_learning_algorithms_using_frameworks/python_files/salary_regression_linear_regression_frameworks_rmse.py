@@ -58,8 +58,16 @@ print(MSE)
 # we are getting different MSE values becuase the first one calculates MSE while
 # doing testing and the second one calculates MSE while doing training
 kfold = model_selection.KFold(n_splits=10, random_state=7, shuffle=True)
-scoring = 'neg_mean_squared_error'
+scoring = 'neg_root_mean_squared_error'
 results = model_selection.cross_val_score(model, input_train, output_train, cv=kfold, scoring=scoring)
 print(results)
-print("MSE: %.3f (%.3f)" % (results.mean(), results.std()))
+print("RMSE: %.3f (%.3f)" % (results.mean(), results.std()))
 print(np.sqrt(-1*(results.mean())))
+
+
+
+
+
+
+
+

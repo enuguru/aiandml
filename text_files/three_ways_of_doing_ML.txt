@@ -1,0 +1,10 @@
+
+
+
+     AI ML 
+
+     1) USING the cloud frameworks - google cloud, azure and amazon
+
+     2) tools - desktop tools -  MS Excel, MATLAB, POWER BI, Tableau
+
+     3) programming route - Python, R and c++

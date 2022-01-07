@@ -9,13 +9,12 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 
-
 # step 1: reading the data and splitting it to input and output
-dataset = pd.read_csv('../../datasets/salary_regression_train.csv')
+dataset = pd.read_csv('home.csv')
 #inputx = dataset.iloc[:, :-1].values
-inputx = dataset.iloc[:, 0:1].values
-outputy = dataset.iloc[:, 1].values
-#print(inputx)
+inputx = dataset.iloc[:, 0:2].values
+outputy = dataset.iloc[:, 2].values
+print(outputy)
 
 
 # step 2: select one thirds of the data for testing and two thirds for training
@@ -30,27 +29,28 @@ print("\nThe model we are using is ", model.fit(input_train, output_train))
 
 
 # step 4: testing or model prediction using testinput
-years = float(input("\nGive number of years of experience  "))
-testinput = [[years]]
+squarefeet = float(input("\nGive square feet of the house  "))
+bedrooms = float(input("\nGive the number of bed rooms in the house  "))
+testinput = [[squarefeet,bedrooms]]
 predicted_output = model.predict(testinput)
-print('\nThe number of years of experience is ',testinput) 
-print('\nThe salary for the number of years of experience is ',predicted_output) 
+print('\nThe test input is as follows ',testinput) 
+print('\nThe predicted house price is ',predicted_output) 
 yes = input("\nCan I proceed\n")
 
 
 # step 5: Visualising the training results
-plt.scatter(input_train, output_train, color = 'red')
-plt.plot(input_train, model.predict(input_train), color = 'yellow')
-plt.title('Salary vs Experience (Training set)')
-plt.xlabel('Years of Experience')
-plt.ylabel('Salary')
-plt.show()
+#plt.scatter(input_train, output_train, color = 'red')
+#plt.plot(input_train, model.predict(input_train), color = 'yellow')
+#plt.title('Salary vs Experience (Training set)')
+#plt.xlabel('Years of Experience')
+#plt.ylabel('Salary')
+#plt.show()
 
 
 # step 6: Printing the testing results
-print("\nThe test input (number of years of experience) is as follows \n")
+print("\nThe test input (square feet and the number of bed rooms) is as follows \n")
 print(input_test)
 # model predicting the Test set results
 predicted_output = model.predict(input_test)
-print("\nThe output (salary) for the test input is as follows \n")
+print("\nThe predicted price of the house for the test input is as follows \n")
 print(predicted_output)

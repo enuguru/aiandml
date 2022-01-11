@@ -1,6 +1,5 @@
 
 
-
 andrew ng slides
 https://github.com/qinhanmin2014/machine-learning-Andrew-Ng/tree/master/slides
 
@@ -21,13 +20,11 @@ https://karpathy.ai/
 Yoshio Bengio
 https://yoshuabengio.org/
 
-Jürgen Schmidhuber 
+Jurgen Schmidhuber 
 https://people.idsia.ch/~juergen/
 
 geoffery hinton homepage
 https://www.cs.toronto.edu/~hinton/
-
-
 
 
 

@@ -1,6 +1,5 @@
 
 
-
 learn the python, java, c++ build environment
 .envrc file
 makefile
@@ -29,22 +28,3 @@ learn useful tools - tmux, click in python, groovy,
 short cuts in every platform and language -
 
 learn the commands typing on command line
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -9,6 +9,7 @@
 #
 # **Please see knn.txt for additional details.**
 
+
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -35,9 +36,41 @@ knn_df['pred'] = knn_df['pred'].apply(lambda x: 0 if x <= 0.65 else 1)
 print("\n",knn_df)
 print(knn_df['pred'].value_counts()) # 0=220 1=180
 
-knn_df.to_csv(r'new.csv')
 
 # Use the Standard Scaler on the criteria
-#s_scaler = StandardScaler()
-#s_scaler.fit(knn_df.drop('pred',axis=1))
-#scaled_features = s_scaler.transform(knn_df.drop('pred',axis=1))
+s_scaler = StandardScaler()
+s_scaler.fit(knn_df.drop('pred',axis=1))
+scaled_features = s_scaler.transform(knn_df.drop('pred',axis=1))
+
+X_train, X_test, y_train, y_test = train_test_split(scaled_features,knn_df['pred'], test_size=0.33)
+
+error = []
+
+# loop through knn predictions with different k values to find the optimal k value
+
+for i in range(1,40):
+
+    knn = KNeighborsClassifier(n_neighbors=i)
+    knn.fit(X_train,y_train)
+    pred_i = knn.predict(X_test)
+    error.append(np.mean(pred_i != y_test))
+
+# Instead of a screen full of numbers lets plot it
+
+plt.figure(figsize=(16,12))
+plt.plot(range(1,40),error,color='blue', linestyle='dashed', marker='o',
+         markerfacecolor='red', markersize=12)
+
+plt.title('Error Rate vs. Chosen K Value')
+plt.xlabel('Tested K Value')
+plt.ylabel('Error Rate')
+plt.show()
+
+# The "elbow" was around 30 in the plot
+knn = KNeighborsClassifier(n_neighbors=30)
+
+knn.fit(X_train,y_train)
+pred = knn.predict(X_test)
+
+print(f'Confusion Matrix: \n {confusion_matrix(y_test,pred)} \n \n')
+print(f'Classification Report: \n {classification_report(y_test,pred)}')

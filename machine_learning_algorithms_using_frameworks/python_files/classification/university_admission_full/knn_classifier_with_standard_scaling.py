@@ -1,15 +1,4 @@
 
-#!/usr/bin/env python
-# coding: utf-8
-
-# **This is my attempt to demonstrate my skill using Python to impliment K Nearest Neighbors.**
-#
-# I just grabbed the first random dataset from Kaggle that I thought I could use for classificiation.
-# There was no "class" column so I made one from the Chance of Admit percentage column.
-#
-# **Please see knn.txt for additional details.**
-
-
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt

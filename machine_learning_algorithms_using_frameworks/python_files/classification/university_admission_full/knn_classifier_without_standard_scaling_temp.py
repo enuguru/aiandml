@@ -1,4 +1,15 @@
 
+#!/usr/bin/env python
+# coding: utf-8
+
+# **This is my attempt to demonstrate my skill using Python to impliment K Nearest Neighbors.**
+#
+# I just grabbed the first random dataset from Kaggle that I thought I could use for classificiation.
+# There was no "class" column so I made one from the Chance of Admit percentage column.
+#
+# **Please see knn.txt for additional details.**
+
+
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -13,8 +24,26 @@ from sklearn.metrics import classification_report,confusion_matrix
 # I just like to lowercase and remove spaces from my cols to minimize errors
 knn_df = pd.read_csv("Admission_Predict_Classification.csv", names=["id", "gre", "toefl", "u_rating", "sop", "lor", "cgpa", "research", "pred"], header=0, index_col = 0)
 print(knn_df)
-knn_input = knn_df.drop('pred',axis=1)
+#knn_df.head()
+#print("\n",knn_df)
 
+# Scale the data.  I used different scalers for criteria and classes
+# It just worked out to get me better results this time around.
+
+# Use the MinMax Scaler and make the percentage True of False at 65% on the pred column
+#print("\n",knn_df)
+#print(knn_df['pred'].value_counts()) # 0=220 1=180
+
+
+# Use the Standard Scaler on the criteria
+s_scaler = StandardScaler()
+knn_input = knn_df.drop('pred',axis=1)
+s_scaler.fit(knn_df.drop('pred',axis=1))
+scaled_features = s_scaler.transform(knn_df.drop('pred',axis=1))
+#print(scaled_features)
+
+
+#X_train, X_test, y_train, y_test = train_test_split(scaled_features,knn_df['pred'], test_size=0.33)
 X_train, X_test, y_train, y_test = train_test_split(knn_input,knn_df['pred'], test_size=0.33)
 
 error = []
@@ -40,7 +69,7 @@ plt.ylabel('Error Rate')
 plt.show()
 
 # The "elbow" was around 30 in the plot
-knn = KNeighborsClassifier(n_neighbors=6)
+knn = KNeighborsClassifier(n_neighbors=30)
 
 knn.fit(X_train,y_train)
 pred = knn.predict(X_test)

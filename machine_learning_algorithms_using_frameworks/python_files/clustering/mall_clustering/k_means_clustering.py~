@@ -14,7 +14,7 @@ from sklearn.cluster import KMeans
 from sklearn.cluster import MiniBatchKMeans
 wcss = []
 for i in range(1, 11):
-    kmeans = MiniBatchKMeans(n_clusters = i,batch_size =1024)#, init = 'k-means++', random_state = 42)
+    kmeans = MiniBatchKMeans(n_clusters = i,batch_size >=1024)#, init = 'k-means++', random_state = 42)
     kmeans.fit(X)
     wcss.append(kmeans.inertia_)
 plt.plot(range(1, 11), wcss)
@@ -24,7 +24,7 @@ plt.ylabel('WCSS')
 plt.show()
 
 # Training the K-Means model on the dataset
-kmeans = MiniBatchKMeans(n_clusters = 5,batch_size =1024)#, init = 'k-means++', random_state = 42,OMP_NUM_THREADS=1)
+kmeans = MiniBatchKMeans(n_clusters = 5,batch_size>=1024)#, init = 'k-means++', random_state = 42,OMP_NUM_THREADS=1)
 y_kmeans = kmeans.fit_predict(X)
 print(y_kmeans)
 

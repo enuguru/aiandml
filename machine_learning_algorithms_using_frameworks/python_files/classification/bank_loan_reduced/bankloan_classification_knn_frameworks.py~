@@ -14,7 +14,7 @@ outputy = array[:,2]
 
 
 # step 2: selecting the KNN model 
-thismodel = KNeighborsClassifier(n_neighbors=3)
+thismodel = KNeighborsClassifier()
 print("\nThe model selected is",thismodel)
 print("\nThe parameters of the model are\n\n",thismodel.get_params())
 #print(thismodel.set_params())

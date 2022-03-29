@@ -1,0 +1,31 @@
+
+
+what is the convention to choose the K value ?
+
+if dataset is small
+k = sqrt(n)  where n is the number of records
+
+dataset is medium 
+
+k = sqrt(n/4)
+
+if dataset is huge
+
+k = sqrt(n/16)
+
+conventions or thumb rules for selection of K
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

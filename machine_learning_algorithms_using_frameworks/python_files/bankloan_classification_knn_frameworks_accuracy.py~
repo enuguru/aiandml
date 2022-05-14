@@ -25,6 +25,6 @@ kfold = KFold(n_splits=10, random_state=None,shuffle=False)
 model = KNeighborsClassifier()
 
 # step 6: select accuracy and performance metric and perform cross validation
-scoring = 'accuracy'
+scoring = 'auc'
 results = cross_val_score(model, X, Y, cv=kfold, scoring=scoring)
 print("Accuracy: %.3f (%.3f)" % (results.mean(), results.std()))

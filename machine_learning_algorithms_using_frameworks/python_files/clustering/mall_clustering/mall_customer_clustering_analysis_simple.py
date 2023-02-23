@@ -1,3 +1,4 @@
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt 
@@ -62,7 +63,6 @@ plt.xlabel('Age'), plt.ylabel('Annual Income (k$)')
 plt.title('Age vs Annual Income w.r.t Gender')
 plt.legend()
 plt.show()
-
 
 plt.figure(1 , figsize = (15 , 6))
 for gender in ['Male' , 'Female']:
@@ -158,21 +158,3 @@ plt.scatter( x = 'Annual Income (k$)' ,y = 'Spending Score (1-100)' , data = df 
 plt.scatter(x = centroids2[: , 0] , y =  centroids2[: , 1] , s = 300 , c = 'red' , alpha = 0.5)
 plt.ylabel('Spending Score (1-100)') , plt.xlabel('Annual Income (k$)')
 plt.show()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

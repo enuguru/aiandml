@@ -1,0 +1,8 @@
+Game_number,Result,Avg_team_Age,Match_light_type,Match_format,Bowlers_in_team,Wicket_keeper_in_team,All_rounder_in_team,First_selection,Opponent,Season,Audience_number,Offshore,Max_run_scored_1over,Max_wicket_taken_1over,Extra_bowls_bowled,Min_run_given_1over,Min_run_scored_1over,Max_run_given_1over,extra_bowls_opponent,player_highest_run,Players_scored_zero,player_highest_wicket
+0,0,18.0,0,0,3.0,1,3,1,2,1,9940,0,13,3,0,2,3,6,0,54,3,1
+1,0,24.0,0,0,3.0,1,2,1,2,1,7714,0,22,3,1,3,2,6,0,47,2,1
+2,0,24.0,0,1,2.0,1,1,1,0,1,17948,0,12,3,1,3,4,6,0,52,2,1
+3,0,24.0,0,1,2.0,1,1,1,0,1,17948,0,12,3,1,3,4,6,0,52,2,1
+4,1,24.0,0,0,2.0,1,4,1,1,0,33425,0,22,1,4,2,1,6,2,33,2,2
+5,0,24.0,0,0,1.0,1,2,0,1,0,29197,1,19,1,4,3,4,6,2,34,3,2
+6,1,24.0,0,0,1.0,1,2,1,2,0,17157,0,15,1,4,3,2,6,3,94,1,1

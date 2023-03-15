@@ -16,13 +16,11 @@ df=pd.read_csv("Play Tennis.csv")
 value=['Outlook','Temprature','Humidity','Wind']
 print(df)
 
-
 #machine learning algorithms can only learn from numbers (int, float, doubles .. )
 #so let us encode it to int
 string_to_int= preprocessing.LabelEncoder()  #encode your data
 df=df.apply(string_to_int.fit_transform) #fit and transform it
 print(df)
-
 
 #To divide our data into attribute set and Label:
 feature_cols = ['Outlook','Temprature','Humidity','Wind']

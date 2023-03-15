@@ -12,6 +12,7 @@ from sklearn.metrics import mean_squared_error
 
 # step 1: reading the data and splitting it to input and output
 dataset = pd.read_csv('../../datasets/salary_regression_train.csv')
+print(dataset)
 #inputx = dataset.iloc[:, :-1].values
 inputx = dataset.iloc[:, 0:1].values
 outputy = dataset.iloc[:, 1].values

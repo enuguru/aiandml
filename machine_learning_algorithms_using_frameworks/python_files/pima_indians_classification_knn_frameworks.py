@@ -12,7 +12,7 @@ from sklearn.neighbors import KNeighborsClassifier
 filename = '../../datasets/pima-indians_classification_train.csv'
 names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
 df = read_csv(filename, names=names)
-
+print(df)
 # step 3: split in to input and output
 array = df.values
 inputx = array[:,0:8]

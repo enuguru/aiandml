@@ -28,8 +28,3 @@ model = KNeighborsClassifier()
 scoring = 'accuracy'
 results = cross_val_score(model, X, Y, cv=kfold, scoring=scoring)
 print("Accuracy: %.3f (%.3f)" % (results.mean(), results.std()))
-
-
-
-
-

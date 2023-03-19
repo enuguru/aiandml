@@ -1,0 +1,55 @@
+
+banknote authentication Data Set
+Download: Data Folder, Data Set Description
+
+Abstract: Data were extracted from images that were taken for the evaluation of an authentication procedure for banknotes.
+
+Data Set Characteristics:  Multivariate
+
+Number of Instances:  1372
+
+Area:  Computer
+
+Attribute Characteristics:  Real
+
+Number of Attributes: 5
+
+Date Donated  2013-04-16
+
+Associated Tasks:  Classification
+
+Missing Values?  N/A
+
+Number of Web Hits:  362552
+
+
+Source:
+
+Owner of database: Volker Lohweg (University of Applied Sciences, Ostwestfalen-Lippe, volker.lohweg '@' hs-owl.de)
+Donor of database: Helene DÃ¶rksen (University of Applied Sciences, Ostwestfalen-Lippe, helene.doerksen '@' hs-owl.de)
+Date received: August, 2012
+
+
+Data Set Information:
+
+Data were extracted from images that were taken from genuine and forged banknote-like specimens. For digitization, an industrial camera usually used for print inspection was used. The final images have 400x 400 pixels. Due to the object lens and distance to the investigated object gray-scale pictures with a resolution of about 660 dpi were gained. Wavelet Transform tool were used to extract features from images.
+
+
+Attribute Information:
+
+1. variance of Wavelet Transformed image (continuous)
+2. skewness of Wavelet Transformed image (continuous)
+3. curtosis of Wavelet Transformed image (continuous)
+4. entropy of image (continuous)
+5. class (integer)
+
+
+Relevant Papers:
+
+paper submitted (info will be uploaded asap)
+
+
+
+Citation Request:
+
+Please refer to the Machine Learning Repository's citation policy

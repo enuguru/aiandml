@@ -1,13 +1,13 @@
-# fit a decision tree on an imbalanced classification dataset
+# bootstrap class balanced random forest for imbalanced classification
 from numpy import mean
 from sklearn.datasets import make_classification
 from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import RepeatedStratifiedKFold
-from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
 # generate dataset
-X, y = make_classification(n_samples=10000, n_features=2, n_redundant=0, n_clusters_per_class=1, weights=[0.99], flip_y=0, random_state=3)
+X, y = make_classification(n_samples=10000, n_features=2, n_redundant=0, n_clusters_per_class=1, weights=[0.99], flip_y=0, random_state=4)
 # define model
-model = DecisionTreeClassifier()
+model = RandomForestClassifier(n_estimators=10, class_weight='balanced_subsample')
 # define evaluation procedure
 cv = RepeatedStratifiedKFold(n_splits=10, n_repeats=3, random_state=1)
 # evaluate model

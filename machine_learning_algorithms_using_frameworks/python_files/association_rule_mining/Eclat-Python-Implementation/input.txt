@@ -1,7 +1,260 @@
-5 a b c d e
-5 f g c h i
-5 j g c h k
-5 j l c d m
-5 n l c d m
-4 o g c h
-5 o p q d k
+ ['cheese,hard'] : 3 
+ ['cheese,hard', 'vegetables,whole'] : 3 
+ ['food,bottled'] : 3 
+ ['product,,,,,,,,,,,,,,,\n'] : 3 
+ ['bakery', 'product,,,,,,,,,,,,,,,\n'] : 3 
+ ['life', 'bakery', 'product,,,,,,,,,,,,,,,\n'] : 3 
+ ['life', 'product,,,,,,,,,,,,,,,\n'] : 3 
+ ['water,soda,fruit/vegetable'] : 3 
+ ['products,canned'] : 3 
+ ['products,canned', 'food'] : 3 
+ ['fruit,herbs,whole'] : 3 
+ ['fruit,bottled'] : 3 
+ ['articles,newspapers,,,,,,,,,,,,\n'] : 3 
+ ['beer,,,,,,,,,,,,,,,,,\n'] : 3 
+ ['powder,bottled'] : 3 
+ ['milk,yogurt,sliced'] : 3 
+ ['cream,,,,,,,,,,,,,,,,,,,\n'] : 3 
+ ['cream,,,,,,,,,,,,,,,,,,,\n', 'milk,whipped/sour'] : 3 
+ ['cream,,,,,,,,,,,,,,,,,,,\n', 'milk,whipped/sour', 'vegetables,whole'] : 3 
+ ['cream,,,,,,,,,,,,,,,,,,,\n', 'vegetables,whole'] : 3 
+ ['meat,,,,,,,,,,,,,,,,,,,,,,\n'] : 3 
+ ['vegetables,cream'] : 3 
+ ['vegetables,cream', 'cheese'] : 3 
+ ['meals,bottled'] : 3 
+ ['chocolate,,,,,,,,,,,,,,,,,,,,\n'] : 3 
+ ['cream,hard'] : 3 
+ ['milk,,,,,,,,,,,,,,,,,,,,,\n'] : 3 
+ ['milk,,,,,,,,,,,,,,,,,,,,,\n', 'fruit,whole'] : 3 
+ ['snack,,,,,,,,,,,,,,,,,,,,\n'] : 3 
+ ['vegetables,yogurt,brown'] : 3 
+ ['product,shopping'] : 3 
+ ['bakery', 'product,shopping'] : 3 
+ ['life', 'bakery', 'product,shopping'] : 3 
+ ['life', 'product,shopping'] : 3 
+ ['beer,hygiene'] : 3 
+ ['cream,specialty'] : 3 
+ ['plants,,,,,,,,,,,,,,,,,\n'] : 3 
+ ['fruit,onions,other'] : 3 
+ ['chocolate,,,,,,,,,,,,,,,,,,,,,,\n'] : 3 
+ ['meals,frozen'] : 3 
+ ['beer,,,,,,,,,,,,,,\n'] : 3 
+ [',white'] : 3 
+ [',white', 'cheese'] : 3 
+ ['vegetables,misc.'] : 3 
+ ['(appetizer),,,,,,,,,,,,,,,,,,,,\n'] : 3 
+ ['beverages,fruit/vegetable'] : 3 
+ [',domestic'] : 3 
+ [',domestic', 'cheese'] : 3 
+ ['cheese,cream'] : 3 
+ ['cheese', 'cheese,cream'] : 3 
+ ['milk,hard'] : 3 
+ ['wine,,,,,,,,,,,,,,,,,\n'] : 3 
+ ['water,red/blush'] : 3 
+ ['cheese,,,,,,,,,,,,,,,,,,,,,,\n'] : 3 
+ ['bags,,,,,,,,,,,,,,\n'] : 3 
+ ['fruit,butter'] : 3 
+ ['vegetables,,,,,,,,,,,,,,,,,,,\n'] : 3 
+ ['milk,,,,,,,,,,,,,,,,,,,,\n'] : 3 
+ ['water,long'] : 3 
+ ['water,long', 'bakery'] : 3 
+ ['water,long', 'bakery', 'life'] : 3 
+ ['water,long', 'life'] : 3 
+ ['beverages,,,,,,,,,,,,,,,,,,,,,,\n'] : 3 
+ [',spread'] : 3 
+ [',spread', 'cheese'] : 3 
+ ['bar,shopping'] : 3 
+ ['beer,specialty'] : 3 
+ ['cleaner,,,,,,,,,,,,,,,\n'] : 3 
+ ['bar,,,,,,,,,,,,,,,,,,,\n'] : 3 
+ ['milk,brown'] : 4 
+ ['plants,,,,,,,,,,,,,,,,,,,,,\n'] : 4 
+ ['beer,salty'] : 4 
+ ['milk,curd,yogurt,whipped/sour'] : 4 
+ ['products,shopping'] : 4 
+ ['cream,sliced'] : 4 
+ ['cheese,domestic'] : 4 
+ ['vegetables,onions,other'] : 4 
+ ['articles,,,,,,,,,,,,,,,,\n'] : 4 
+ ['articles,,,,,,,,,,,,,,,,,,,\n'] : 4 
+ ['bread,,,,,,,,,,,,,,,,,,,,,\n'] : 4 
+ ['bags,,,,,,,,,,,,,,,,,,,,,,\n'] : 4 
+ ['articles,,,,,,,,,,,,,,,,,,,,,\n'] : 4 
+ ['water,,,,,,,,,,,,,,,,,,\n'] : 4 
+ ['water,,,,,,,,,,,,,,,,,,,\n'] : 4 
+ ['snack,shopping'] : 4 
+ ['articles,,,,,,,,,,,,,,,\n'] : 4 
+ ['water,soda,misc.'] : 4 
+ ['beer,shopping'] : 4 
+ ['bar,,,,,,,,,,,,,,,,,,,,,\n'] : 4 
+ ['gum,,,,,,,,,,,,,,,,,,,,,\n'] : 4 
+ ['milk,white'] : 4 
+ ['milk,white', 'vegetables,whole'] : 3 
+ ['products,,,,,,,,,,,,,,,,,,,,,\n'] : 4 
+ ['milk,rolls/buns,,,,,,,,,,,,,,,,,,,,\n'] : 4 
+ ['juice,hygiene'] : 4 
+ ['wine,,,,,,,,,,,,,,,,,,,,,\n'] : 4 
+ ['vegetables,brown'] : 4 
+ ['juice,,,,,,,,,,,,,,,,,,,,,\n'] : 4 
+ ['bread,fruit/vegetable'] : 4 
+ ['beer,,,,,,,,,,,,,,,,,,\n'] : 4 
+ ['products,,,,,,,,,,,,,,,,,,,,,,\n'] : 4 
+ ['wine,,,,,,,,,,,,,,,,,,,,,,\n'] : 4 
+ ['vegetables,canned'] : 4 
+ ['water,hygiene'] : 4 
+ ['juice,canned'] : 4 
+ ['juice,,,,,,,,,,,,,,,,,,,,,,\n'] : 4 
+ ['fruit,,,,,,,,,,,,,,,,,,,,,\n'] : 4 
+ ['cream,cream'] : 5 
+ ['cream,cream', 'vegetables,whole'] : 3 
+ ['cheese', 'cream,cream', 'vegetables,whole'] : 3 
+ ['cream,cream', 'cheese'] : 5 
+ ['juice,long'] : 5 
+ ['bakery', 'juice,long'] : 5 
+ ['life', 'bakery', 'juice,long'] : 5 
+ ['life', 'juice,long'] : 5 
+ ['cream,domestic'] : 5 
+ ['water,misc.'] : 5 
+ ['cream,frozen'] : 5 
+ ['milk,sliced'] : 5 
+ [',frozen'] : 5 
+ [',frozen', 'vegetables,whole'] : 4 
+ ['cheese', ',frozen', 'vegetables,whole'] : 4 
+ [',frozen', 'cheese'] : 5 
+ ['beer,white'] : 5 
+ ['vegetables,ice'] : 5 
+ ['bags,,,,,,,,,,,,,,,,,,,,\n'] : 5 
+ ['meat,root'] : 5 
+ ['vegetables,other', 'meat,root'] : 3 
+ ['vegetables,whole', 'meat,root'] : 3 
+ ['beverages,,,,,,,,,,,,,,,,,,,,,\n'] : 5 
+ ['beer,red/blush'] : 5 
+ ['juice,salty'] : 5 
+ ['cheese,rolls/buns,bottled'] : 5 
+ ['eggs,brown'] : 5 
+ ['meat,other'] : 5 
+ ['meat,other', 'vegetables,whole'] : 3 
+ ['vegetables,butter'] : 6 
+ ['wine,,,,,,,,,,,,,,,,,,,,\n'] : 6 
+ ['keeping'] : 6 
+ ['milk,butter'] : 6 
+ ['milk,whipped/sour', 'milk,butter'] : 3 
+ ['sanitary'] : 6 
+ ['milk,bottled'] : 6 
+ ['eggs,white'] : 6 
+ ['fruit,root', 'eggs,white'] : 3 
+ ['fruit,root', 'vegetables,other', 'eggs,white'] : 3 
+ ['vegetables,other', 'eggs,white'] : 3 
+ ['bread,brown'] : 6 
+ ['bags,,,,,,,,,,,,,,,,,,,,,\n'] : 6 
+ ['cream,,,,,,,,,,,,,,,,,,,,,\n'] : 6 
+ ['fruit,berries,root'] : 6 
+ ['fruit,berries,root', 'vegetables,whole'] : 3 
+ ['meat,citrus'] : 6 
+ ['vegetables,fruit/vegetable'] : 6 
+ ['vegetables,fruit/vegetable', 'vegetables,whole'] : 3 
+ ['milk,domestic'] : 6 
+ ['bread,canned'] : 6 
+ ['water,canned'] : 6 
+ ['products'] : 7 
+ ['bags,,,,,,,,,,,,,,,,,,,\n'] : 7 
+ ['meat,whole'] : 7 
+ ['water,,,,,,,,,,,,,,,,,,,,\n'] : 7 
+ ['beer,,,,,,,,,,,,,,,,,,,\n'] : 7 
+ ['bar,,,,,,,,,,,,,,,,,,,,,,\n'] : 7 
+ ['beer,liquor'] : 7 
+ ['cream,,,,,,,,,,,,,,,,,,,,,,\n'] : 8 
+ ['water,,,,,,,,,,,,,,,,,,,,,,\n'] : 8 
+ ['water,fruit/vegetable'] : 8 
+ ['potato'] : 8 
+ ['potato', 'vegetables,whole'] : 3 
+ ['water,bottled'] : 9 
+ ['vegetables,whole', 'water,bottled'] : 4 
+ ['vegetables,,,,,,,,,,,,,,,,,,,,,\n'] : 9 
+ ['food'] : 9 
+ ['bags,,,,,,,,,,,,,,,\n'] : 9 
+ ['bags,,,,,,,,,,,,,,,\n', 'vegetables,whole'] : 4 
+ ['vegetables,domestic'] : 9 
+ ['vegetables,domestic', 'vegetables,whole'] : 4 
+ ['juice,bottled'] : 9 
+ ['juice,bottled', 'vegetables,whole'] : 5 
+ ['water,,,,,,,,,,,,,,,,,,,,,\n'] : 9 
+ ['vegetables,frozen'] : 9 
+ ['fruit,root', 'vegetables,frozen'] : 3 
+ ['vegetables,other', 'vegetables,frozen'] : 3 
+ ['bread,bottled'] : 9 
+ ['milk,cream'] : 10 
+ ['milk,cream', 'vegetables,whole'] : 3 
+ ['cheese', 'milk,cream', 'vegetables,whole'] : 3 
+ ['milk,cream', 'cheese'] : 10 
+ ['vegetables,,,,,,,,,,,,,,,,,,,,,,\n'] : 10 
+ ['beer,,,,,,,,,,,,,,,,,,,,\n'] : 11 
+ ['bags,,,,,,,,,,,,,,,,,\n'] : 11 
+ ['beer,,,,,,,,,,,,,,,,,,,,,\n'] : 11 
+ ['bags,,,,,,,,,,,,,,,,\n'] : 12 
+ ['bags,,,,,,,,,,,,,,,,\n', 'cheese'] : 3 
+ ['bags,,,,,,,,,,,,,,,,,,\n'] : 13 
+ ['vegetables,bottled'] : 13 
+ ['vegetables,whipped/sour'] : 13 
+ ['milk,,,,,,,,,,,,,,,,,,,,,,\n'] : 13 
+ ['fruit/vegetables,whole'] : 14 
+ ['fruit/vegetables,whole', 'fruit,other'] : 3 
+ ['fruit/vegetables,whole', 'fruit,other', 'vegetables,packaged'] : 3 
+ ['fruit/vegetables,whole', 'vegetables,packaged'] : 8 
+ ['vegetables,packaged'] : 16 
+ ['fruit,other', 'vegetables,packaged'] : 3 
+ ['fruit,root', 'vegetables,packaged'] : 4 
+ ['cheese,frozen'] : 16 
+ ['fruit,other', 'cheese,frozen'] : 4 
+ ['vegetables,other', 'cheese,frozen'] : 4 
+ ['vegetables,other', 'cheese,frozen', 'vegetables,whole'] : 4 
+ ['cheese,frozen', 'vegetables,whole'] : 6 
+ ['fruit,pip'] : 16 
+ ['fruit,tropical', 'fruit,pip'] : 3 
+ ['fruit,pip', 'cheese'] : 3 
+ ['fruit,root', 'fruit,pip'] : 4 
+ ['fruit,root', 'fruit,pip', 'vegetables,whole'] : 3 
+ ['fruit,root', 'vegetables,other', 'fruit,pip', 'vegetables,whole'] : 3 
+ ['fruit,root', 'vegetables,other', 'fruit,pip'] : 4 
+ ['vegetables,other', 'fruit,pip'] : 4 
+ ['vegetables,other', 'fruit,pip', 'vegetables,whole'] : 3 
+ ['fruit,pip', 'vegetables,whole'] : 4 
+ ['fruit,tropical'] : 19 
+ ['vegetables,other', 'fruit,tropical'] : 3 
+ ['fruit,tropical', 'vegetables,whole'] : 3 
+ ['fruit,root', 'fruit,tropical'] : 4 
+ ['milk,whipped/sour'] : 22 
+ ['milk,whipped/sour', 'vegetables,whole'] : 9 
+ ['milk,frozen'] : 24 
+ ['fruit,root', 'milk,frozen'] : 3 
+ ['milk,frozen', 'vegetables,whole'] : 8 
+ ['bakery'] : 26 
+ ['fruit,root', 'bakery'] : 4 
+ ['fruit,root', 'bakery', 'vegetables,other'] : 4 
+ ['fruit,root', 'bakery', 'vegetables,other', 'life'] : 4 
+ ['fruit,root', 'bakery', 'life'] : 4 
+ ['bakery', 'vegetables,whole'] : 4 
+ ['life', 'bakery', 'vegetables,whole'] : 4 
+ ['bakery', 'vegetables,other'] : 5 
+ ['life', 'bakery', 'vegetables,other'] : 5 
+ ['life', 'bakery'] : 26 
+ ['life'] : 26 
+ ['life', 'fruit,root'] : 4 
+ ['vegetables,other', 'life', 'fruit,root'] : 4 
+ ['life', 'vegetables,whole'] : 4 
+ ['life', 'vegetables,other'] : 5 
+ ['fruit,root'] : 32 
+ ['fruit,root', 'vegetables,other'] : 11 
+ ['fruit,root', 'vegetables,other', 'vegetables,whole'] : 4 
+ ['fruit,root', 'vegetables,whole'] : 12 
+ ['fruit,whole'] : 33 
+ ['fruit,other'] : 34 
+ ['fruit,other', 'cheese'] : 4 
+ ['fruit,other', 'vegetables,whole'] : 11 
+ ['vegetables,other'] : 37 
+ ['vegetables,other', 'cheese'] : 3 
+ ['vegetables,other', 'vegetables,whole'] : 16 
+ ['cheese'] : 40 
+ ['vegetables,whole', 'cheese'] : 8 
+ ['beer,,,,,,,,,,,,,,,,,,,,,,\n'] : 43 
+ ['vegetables,whole'] : 92 

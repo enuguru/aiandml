@@ -1,4 +1,6 @@
 # matrix dot product
+from numpy import matmul
+from numpy import multiply
 from numpy import array
 # define first matrix
 A = array([
@@ -17,3 +19,5 @@ print(C)
 # multiply matrices with @ operator
 D = A @ B
 print(D)
+S = matmul(A,B)
+print(S)

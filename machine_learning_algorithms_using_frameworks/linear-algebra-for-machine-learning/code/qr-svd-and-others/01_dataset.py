@@ -11,7 +11,10 @@ data = array([
 print(data)
 # split into inputs and outputs
 X, y = data[:,0], data[:,1]
+print(X)
+print(y)
 X = X.reshape((len(X), 1))
+print(X)
 # scatter plot
 pyplot.scatter(X, y)
 pyplot.show()

@@ -6,5 +6,6 @@ data = [[11, 22],
 		[55, 66]]
 # array of data
 data = array(data)
+print(data.shape)
 print('Rows: %d' % data.shape[0])
 print('Cols: %d' % data.shape[1])

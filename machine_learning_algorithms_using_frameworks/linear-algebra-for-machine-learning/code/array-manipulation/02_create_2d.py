@@ -7,4 +7,5 @@ data = [[11, 22],
 # array of data
 data = array(data)
 print(data)
+print(data.shape)
 print(type(data))

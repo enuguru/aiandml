@@ -3,8 +3,9 @@ from numpy import array
 from numpy.linalg import inv
 # define matrix
 A = array([
-	[1.0, 2.0],
-	[3.0, 4.0]])
+	[1, 2, 3],
+	[0, 1, 4],
+    [5, 6, 0]])
 print(A)
 # invert matrix
 B = inv(A)

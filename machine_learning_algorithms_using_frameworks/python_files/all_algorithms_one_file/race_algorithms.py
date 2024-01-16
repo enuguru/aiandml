@@ -18,7 +18,7 @@ X = array[:,0:8]
 Y = array[:,8]
 # prepare models
 models = []
-models.append(('LR', LogisticRegression()))
+models.append(('LR', LogisticRegression(max_iter=1000)))
 models.append(('LDA', LinearDiscriminantAnalysis()))
 models.append(('KNN', KNeighborsClassifier()))
 models.append(('CART', DecisionTreeClassifier()))
@@ -29,7 +29,7 @@ results = []
 names = []
 scoring = 'accuracy'
 for name, model in models:
-	kfold = KFold(n_splits=10, random_state=7)
+	kfold = KFold(n_splits=10, random_state=7,shuffle=True)
 	cv_results = cross_val_score(model, X, Y, cv=kfold, scoring=scoring)
 	results.append(cv_results)
 	names.append(name)

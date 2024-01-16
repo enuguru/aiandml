@@ -35,7 +35,7 @@ results = []
 names = []
 scoring = 'accuracy'
 for name, model in models:
-	kfold = KFold(n_splits=10, random_state=7)
+	kfold = KFold(n_splits=10)#, random_state=7)
 	cv_results = cross_val_score(model, X, Y, cv=kfold, scoring=scoring)
 	results.append(cv_results)
 	#print(results)

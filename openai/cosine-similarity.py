@@ -24,8 +24,8 @@ def text_to_vector(text):
     return Counter(words)
 
 
-text1 = "This is a foo bar sentence ."
-text2 = "This sentence is similar to a foo bar sentence ."
+text1 = "I am driving my car home in rain, I need to be careful" 
+text2 = "I am riding my harley davidson on a rainly evening, i am doing fine, vehicle has got good road grip"
 
 vector1 = text_to_vector(text1)
 vector2 = text_to_vector(text2)

@@ -11,13 +11,12 @@ from sklearn.metrics import mean_squared_error
 
 
 # step 1: reading the data and splitting it to input and output
-dataset = pd.read_csv('../../datasets/salary_regression_train.csv')
+dataset = pd.read_csv('C:\\Users\\karth\\aiandml\\datasets\\salary_regression_train.csv')
 print(dataset)
 #inputx = dataset.iloc[:, :-1].values
 inputx = dataset.iloc[:, 0:1].values
-outputy = dataset.iloc[:, 1].values
+outputy = dataset.iloc[:,1].values
 #print(inputx)
-
 
 # step 2: select one thirds of the data for testing and two thirds for training
 input_train, input_test, output_train, output_test = train_test_split(inputx, outputy, test_size = 1/4, random_state = 0)

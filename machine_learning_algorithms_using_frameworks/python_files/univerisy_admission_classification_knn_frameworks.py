@@ -27,7 +27,7 @@ inputx = array[:,1:4]
 outputy = array[:,0]
 
 # step 5: select the model
-model = KNeighborsClassifier()
+model = KNeighborsClassifier(n_neighbors=11)
 
 # step 6: train or build the model
 model.fit(inputx,outputy)

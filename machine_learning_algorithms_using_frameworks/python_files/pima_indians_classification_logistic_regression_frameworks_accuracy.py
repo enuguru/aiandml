@@ -11,6 +11,6 @@ X = array[:,0:8]
 Y = array[:,8]
 kfold = KFold(n_splits=10, random_state=None,shuffle=False)
 model = LogisticRegression(solver='liblinear')
-scoring = 'accuracy'
+scoring = 'precision'
 results = cross_val_score(model, X, Y, cv=kfold, scoring=scoring)
 print("Accuracy: %.3f (%.3f)" % (results.mean(), results.std()))

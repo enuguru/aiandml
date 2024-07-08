@@ -23,7 +23,7 @@ input_train, input_test, output_train, output_test = train_test_split(inputx, ou
 
 
 # step 3: selecting the simple Linear Regression model
-model = LinearRegression()
+model = LinearRegression(positive=True)
 print("\nThe parameters of the model are\n\n",model.get_params())
 #print(model.set_params())
 print("\nThe model we are using is ", model.fit(input_train, output_train))

@@ -8,7 +8,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn import tree
 from sklearn import ensemble
 from xgboost import XGBClassifier
-filename = '../../datasets/iris_classification_train.csv'
+filename = '../../../datasets/iris_classification_train.csv'
 names = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width','flower_name']
 df = read_csv(filename, names=names)
 # label_encoder object knows how to understand word labels.
@@ -20,7 +20,7 @@ inputx = array[:,0:4]
 outputy = array[:,4]
 model = XGBClassifier(eval_metric='mlogloss',use_label_encoder=False)
 print(model.fit(inputx,outputy))
-filename = '../../datasets/iris_classification_test.csv'
+filename = '../../../datasets/iris_classification_test.csv'
 names = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width']
 newdataframe = read_csv(filename, names=names)
 array = newdataframe.values

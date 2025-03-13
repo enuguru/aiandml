@@ -1,0 +1,7 @@
+The pima indians diabetes prediction dataset is attached. Plot the probability density function, pdf plot as separate variables and as a continuous curve for all the above variables. Plot the Box-and-whisker plot as separate variables. Draw the histogram plots also as separate variables. Provide the python program for the generating the above plots as well
+
+draw the pdf plot separately as continuous variables
+
+draw the box and whisker plot as separate variables
+
+draw the histogram plots also as separate variables

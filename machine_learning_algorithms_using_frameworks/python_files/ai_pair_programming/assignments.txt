@@ -1,0 +1,6 @@
+
+can you modify the above prompt and draw the separate pdf plots to come on one page of output?
+
+can you modify the above prompt and draw the separate box and whiker plots to come on one page of output?
+
+can you modify the above prompt and draw the separate histogram plots to come on one page of output?

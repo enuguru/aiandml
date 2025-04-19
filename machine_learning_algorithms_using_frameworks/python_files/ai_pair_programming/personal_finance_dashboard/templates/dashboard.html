@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h2>Dashboard</h2>
+    <p>Income: ${{ income }}</p>
+    <p>Expenses: ${{ expenses }}</p>
+
+    <h3>Add Transaction</h3>
+    <form action="/add_transaction" method="POST">
+        <input type="text" name="description" placeholder="Description" required>
+        <input type="number" name="amount" placeholder="Amount" required>
+        <input type="text" name="category" placeholder="Category" required>
+        <select name="type">
+            <option value="Income">Income</option>
+            <option value="Expense">Expense</option>
+        </select>
+        <button type="submit">Add</button>
+    </form>
+
+    <h3>Transactions</h3>
+    <ul>
+        {% for transaction in transactions %}
+        <li>{{ transaction.description }} - ${{ transaction.amount }} ({{ transaction.type }})
+            <a href="{{ url_for('delete_transaction', transaction_id=transaction.id) }}">Delete</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>

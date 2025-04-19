@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Parser & Job Matcher</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="container mt-5">
+    <h2 class="text-center">Resume Parser & Job Matcher</h2>
+
+    <!-- Upload Resume Section -->
+    <div class="card p-4 mt-3">
+        <h3>Upload Resume (PDF)</h3>
+        <input type="file" id="resume" class="form-control mb-2" accept=".pdf">
+        <button class="btn btn-primary" onclick="uploadResume()">Upload</button>
+    </div>
+
+    <!-- Parsed Resume Data -->
+    <h3 class="mt-4">Parsed Resume Data</h3>
+    <div id="parsed-data" class="alert alert-info">No resume uploaded yet.</div>
+
+    <!-- Job Matching Section -->
+    <div class="card p-4 mt-4">
+        <h3>Job Matching</h3>
+        <textarea id="job-description" class="form-control" placeholder="Enter job description"></textarea>
+        <button class="btn btn-success mt-2" onclick="matchCandidates()">Find Matches</button>
+    </div>
+
+    <!-- Matching Results -->
+    <h3 class="mt-4">Matching Results</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr><th>Name</th><th>Email</th><th>Experience</th><th>Match Score</th></tr>
+        </thead>
+        <tbody id="match-results"></tbody>
+    </table>
+
+    <script>
+        function uploadResume() {
+            var file = $("#resume")[0].files[0];
+            if (!file) {
+                alert("❌ Please select a file!");
+                return;
+            }
+
+            var formData = new FormData();
+            formData.append("resume", file);
+
+            $.ajax({
+                url: "/upload",
+                type: "POST",
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function(response) {
+                    console.log("✅ Resume Uploaded:", response);
+                    $("#parsed-data").html(`
+                        <p><strong>Name:</strong> ${response.name}</p>
+                        <p><strong>Email:</strong> ${response.email}</p>
+                        <p><strong>Phone:</strong> ${response.phone}</p>
+                        <p><strong>Skills:</strong> ${response.skills}</p>
+                        <p><strong>Experience:</strong> ${response.experience} years</p>
+                    `);
+                },
+                error: function(xhr, status, error) {
+                    console.error("❌ Upload Failed:", error);
+                    alert("Upload failed. Check console for details.");
+                }
+            });
+        }
+
+        function matchCandidates() {
+            var job_description = $("#job-description").val();
+            if (!job_description) {
+                alert("❌ Please enter a job description!");
+                return;
+            }
+
+            $.ajax({
+                url: "/match",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify({ job_description: job_description }),
+                success: function(response) {
+                    console.log("✅ Match Results:", response);
+                    var resultHTML = response.map(candidate =>
+                        `<tr>
+                            <td>${candidate.name}</td>
+                            <td>${candidate.email}</td>
+                            <td>${candidate.experience} years</td>
+                            <td>${candidate.match_score}%</td>
+                        </tr>`
+                    ).join("");
+
+                    $("#match-results").html(resultHTML);
+                },
+                error: function(xhr, status, error) {
+                    console.error("❌ Matching Failed:", error);
+                    alert("Job matching failed. Check console for details.");
+                }
+            });
+        }
+    </script>
+</body>
+</html>

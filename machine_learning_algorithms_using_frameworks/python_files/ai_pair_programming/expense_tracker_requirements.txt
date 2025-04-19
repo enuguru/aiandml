@@ -1,0 +1,9 @@
+Project: Expense Tracker Web App (Using Flask and SQLite)
+
+A slightly more difficult web development project using Flask is an Expense Tracker. This app will allow users to:
+
+Add expenses (description, amount, category).
+View all expenses in a table.
+Delete expenses.
+Store data in SQLite (instead of an in-memory list).
+This introduces database handling using Flask-SQLAlchemy.

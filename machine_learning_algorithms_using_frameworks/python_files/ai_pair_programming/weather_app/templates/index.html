@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        input, button { padding: 10px; margin: 10px; font-size: 16px; }
+        #weather-data { margin-top: 20px; font-size: 18px; }
+    </style>
+</head>
+<body>
+    <h2>Weather App</h2>
+    <input type="text" id="city-input" placeholder="Enter city name">
+    <button onclick="getWeather()">Get Weather</button>
+    
+    <div id="weather-data"></div>
+
+    <script>
+        function getWeather() {
+            var city = $("#city-input").val();
+            if (!city) {
+                alert("Please enter a city name");
+                return;
+            }
+
+            $.ajax({
+                url: "/get_weather",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify({ city: city }),
+                success: function(response) {
+                    $("#weather-data").html(
+                        `<p><strong>City:</strong> ${response.city}</p>
+                         <p><strong>Temperature:</strong> ${response.temperature}°C</p>
+                         <p><strong>Description:</strong> ${response.description}</p>
+                         <p><strong>Humidity:</strong> ${response.humidity}%</p>`
+                    );
+                },
+                error: function() {
+                    $("#weather-data").html("<p style='color:red;'>City not found. Try again!</p>");
+                }
+            });
+        }
+    </script>
+</body>
+</html>

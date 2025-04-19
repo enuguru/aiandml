@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Parser & Job Matcher</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        input, button, textarea { padding: 10px; margin: 10px; font-size: 16px; }
+        #result { margin-top: 20px; font-size: 18px; }
+    </style>
+</head>
+<body>
+    <h2>Upload Resume (PDF)</h2>
+    <input type="file" id="resume" accept=".pdf">
+    <button onclick="uploadResume()">Upload</button>
+
+    <h3>Parsed Resume Data</h3>
+    <div id="parsed-data"></div>
+
+    <h2>Job Matching</h2>
+    <textarea id="job-description" placeholder="Enter job description"></textarea>
+    <button onclick="matchCandidates()">Find Matches</button>
+
+    <h3>Matching Results</h3>
+    <div id="match-results"></div>
+
+    <script>
+        function uploadResume() {
+            var file = $("#resume")[0].files[0];
+            if (!file) {
+                alert("Please select a file!");
+                return;
+            }
+
+            var formData = new FormData();
+            formData.append("resume", file);
+
+            $.ajax({
+                url: "/upload",
+                type: "POST",
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function(response) {
+                    $("#parsed-data").html(
+                        `<p><strong>Name:</strong> ${response.name}</p>
+                         <p><strong>Email:</strong> ${response.email}</p>
+                         <p><strong>Phone:</strong> ${response.phone}</p>
+                         <p><strong>Skills:</strong> ${response.skills}</p>`
+                    );
+                }
+            });
+        }
+
+        function matchCandidates() {
+            var job_description = $("#job-description").val();
+            if (!job_description) {
+                alert("Please enter a job description!");
+                return;
+            }
+
+            $.ajax({
+                url: "/match",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify({ job_description: job_description }),
+                success: function(response) {
+                    var resultHTML = "";
+                    response.forEach(candidate => {
+                        resultHTML += `<p><strong>${candidate.name}</strong> - ${candidate.match_score}% match</p>`;
+                    });
+                    $("#match-results").html(resultHTML);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

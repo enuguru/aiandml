@@ -38,16 +38,7 @@ print('\nThe predicted house price is ',predicted_output)
 yes = input("\nCan I proceed\n")
 
 
-# step 5: Visualising the training results
-#plt.scatter(input_train, output_train, color = 'red')
-#plt.plot(input_train, model.predict(input_train), color = 'yellow')
-#plt.title('Salary vs Experience (Training set)')
-#plt.xlabel('Years of Experience')
-#plt.ylabel('Salary')
-#plt.show()
-
-
-# step 6: Printing the testing results
+# step 5: Printing the testing results
 print("\nThe test input (square feet and the number of bed rooms) is as follows \n")
 print(input_test)
 # model predicting the Test set results

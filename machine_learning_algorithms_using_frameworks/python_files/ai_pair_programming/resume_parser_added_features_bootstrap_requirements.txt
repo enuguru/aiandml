@@ -1,0 +1,33 @@
+Project: AI-Powered Resume Parser & Job Matcher (Flask + Python + NLP)
+
+This project will:
+
+Extract information from resumes using NLP (spaCy, PyPDF2)
+Store resumes in a database (SQLite using Flask-SQLAlchemy)
+Match candidates to job descriptions using TF-IDF (scikit-learn)
+Use Flask for the backend and JavaScript (AJAX) for frontend interaction
+
+Features of this project
+
+Extracts candidate details from resumes
+Matches resumes to job descriptions using AI
+Uses NLP for text extraction and skills identification
+
+
+Enhancing the Resume Parser & Job Matcher with Ranking and Bootstrap UI
+Now, we’ll improve the UI and rank candidates by experience & skill match.
+
+Enhancements:
+
+Rank resumes based on skills & experience using NLP & keyword matching.
+
+Improve UI with Bootstrap for better styling.
+Show results in a clean table format.
+
+
+Final Features
+Ranks resumes based on skill match & experience
+Beautiful Bootstrap UI
+Displays results in a clean table
+
+

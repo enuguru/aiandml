@@ -1,0 +1,10 @@
+Project: Personal Finance Dashboard (Using Flask, SQLite, Chart.js, and User Authentication)
+
+A more complex web development project is a Personal Finance Dashboard. This web app will:
+
+Allow users to register and log in (Flask-Login).
+Track income and expenses (Flask-SQLAlchemy for database storage).
+Display a finance summary with charts (Chart.js for visualizations).
+Enable CRUD operations (Create, Read, Update, Delete for transactions).
+
+This project introduces authentication, data visualization, and CRUD operations.

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h2>Dashboard</h2>
+
+    <p><strong>Total Income:</strong> ${{ income }}</p>
+    <p><strong>Total Expenses:</strong> ${{ expenses }}</p>
+
+    <!-- Pie Chart for Income vs. Expense -->
+    <h3>Income vs. Expense</h3>
+    <canvas id="incomeExpenseChart"></canvas>
+
+    <!-- Bar Chart for Expense Categories -->
+    <h3>Category-wise Expense Breakdown</h3>
+    <canvas id="expenseCategoryChart"></canvas>
+
+    <!-- Transaction Form -->
+    <h3>Add Transaction</h3>
+    <form action="/add_transaction" method="POST">
+        <input type="text" name="description" placeholder="Description" required>
+        <input type="number" step="0.01" name="amount" placeholder="Amount" required>
+        <input type="text" name="category" placeholder="Category" required>
+        <select name="type">
+            <option value="Income">Income</option>
+            <option value="Expense">Expense</option>
+        </select>
+        <button type="submit">Add</button>
+    </form>
+
+    <!-- Transaction List -->
+    <h3>Transactions</h3>
+    <ul>
+        {% for transaction in transactions %}
+        <li>
+            {{ transaction.description }} - ${{ transaction.amount }} ({{ transaction.type }})
+            <a href="{{ url_for('delete_transaction', transaction_id=transaction.id) }}">Delete</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <a href="{{ url_for('logout') }}">Logout</a>
+
+    <!-- Chart.js Script -->
+    <script>
+        // Income vs. Expense Pie Chart
+        var ctx1 = document.getElementById('incomeExpenseChart').getContext('2d');
+        new Chart(ctx1, {
+            type: 'pie',
+            data: {
+                labels: ['Income', 'Expenses'],
+                datasets: [{
+                    data: [{{ income }}, {{ expenses }}],
+                    backgroundColor: ['#28a745', '#dc3545']
+                }]
+            }
+        });
+
+        // Category-wise Expense Bar Chart
+        var ctx2 = document.getElementById('expenseCategoryChart').getContext('2d');
+        new Chart(ctx2, {
+            type: 'bar',
+            data: {
+                labels: {{ category_labels | tojson }},
+                datasets: [{
+                    label: 'Expenses by Category',
+                    data: {{ category_values | tojson }},
+                    backgroundColor: '#007bff'
+                }]
+            }
+        });
+    </script>
+
+</body>
+</html>

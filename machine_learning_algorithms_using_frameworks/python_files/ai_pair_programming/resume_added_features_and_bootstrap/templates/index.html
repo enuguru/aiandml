@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Parser & Job Matcher</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        #match-results-container {
+            max-height: 300px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="container mt-5">
+    <h2 class="text-center">Resume Parser & Job Matcher</h2>
+
+    <div class="card p-4 mt-4">
+        <h3>Upload Resume (PDF)</h3>
+        <input type="file" id="resume" class="form-control" accept=".pdf">
+        <button class="btn btn-primary mt-2" onclick="uploadResume()">Upload</button>
+    </div>
+
+    <h3 class="mt-4">Parsed Resume Data</h3>
+    <div id="parsed-data" class="alert alert-info"></div>
+
+    <div class="card p-4 mt-4">
+        <h3>Job Matching</h3>
+        <textarea id="job-description" class="form-control" placeholder="Enter job description"></textarea>
+        <button class="btn btn-success mt-2" onclick="matchCandidates()">Find Matches</button>
+    </div>
+
+    <h3 class="mt-4">Matching Results</h3>
+    <div id="match-results-container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Experience</th>
+                    <th>Match Score</th>
+                </tr>
+            </thead>
+            <tbody id="match-results"></tbody>
+        </table>
+    </div>
+
+    <script>
+        function uploadResume() {
+            var file = $("#resume")[0].files[0];
+            if (!file) {
+                alert("Please select a file!");
+                return;
+            }
+
+            var formData = new FormData();
+            formData.append("resume", file);
+
+            $.ajax({
+                url: "/upload",
+                type: "POST",
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function(response) {
+                    $("#parsed-data").html(`
+                        <p><strong>Name:</strong> ${response.name}</p>
+                        <p><strong>Email:</strong> ${response.email}</p>
+                        <p><strong>Phone:</strong> ${response.phone}</p>
+                        <p><strong>Skills:</strong> ${response.skills}</p>
+                        <p><strong>Experience:</strong> ${response.experience} years</p>
+                    `);
+                }
+            });
+        }
+
+        function highlightMatch(text, keywords) {
+            if (!keywords) return text;
+            var words = keywords.split(" ");
+            words.forEach(word => {
+                if (word.length > 2) {
+                    var regex = new RegExp(word, "gi");
+                    text = text.replace(regex, `<span class="highlight">${word}</span>`);
+                }
+            });
+            return text;
+        }
+
+        function matchCandidates() {
+            var job_description = $("#job-description").val();
+            if (!job_description) {
+                alert("Please enter a job description!");
+                return;
+            }
+
+            $.ajax({
+                url: "/match",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify({ job_description: job_description }),
+                success: function(response) {
+                    var resultHTML = response.map(candidate =>
+                        `<tr>
+                            <td>${highlightMatch(candidate.name, job_description)}</td>
+                            <td>${candidate.email}</td>
+                            <td>${candidate.experience} years</td>
+                            <td>${candidate.match_score}%</td>
+                        </tr>`
+                    ).join("");
+
+                    $("#match-results").html(resultHTML);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

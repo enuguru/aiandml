@@ -1,0 +1,17 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+h2 {
+    text-align: center;
+    color: #343a40;
+}
+
+form {
+    margin-bottom: 20px;
+}

@@ -1,0 +1,6 @@
+Project: To-Do List Web App
+This project will:
+
+Allow users to add, delete, and view their tasks.
+Store tasks in a simple in-memory list (for simplicity; a database can be added later).
+Use HTML, CSS, and Bootstrap for the frontend.

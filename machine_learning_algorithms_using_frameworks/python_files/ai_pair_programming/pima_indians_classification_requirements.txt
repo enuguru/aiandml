@@ -1,4 +1,4 @@
-upload the pima Indians diabetes prediction training dataset and the testing dataset
+upload the Pima Indians diabetes prediction training dataset and the testing dataset
 
 Then give the following prompt in chatGPT.
 
@@ -6,7 +6,7 @@ The Pima Indians diabetes dataset is attached here. There are two csv files prov
 
 first read training data csv file. The first 8 columns are the features of the data. The last column is the output or the target variable.
 
-Please give me the learning algorithm in python for the classification model that uses KNN algorithm. Please use  the fraemworks numpy, pandas, scikit-learn and matplotlib. 
+Please give me the learning algorithm in python for the classification model that uses KNN algorithm. Please use  the frameworks NumPy, pandas, scikit-learn and matplotlib. 
 
 First select the KNN algorithm, then train the model and do the testing after reading the test data file provided and predicting using the KNN algorithm, classification model
 

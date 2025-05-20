@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Expense</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    {% include 'base.html' %}
+    <div class="container">
+        <h1>Expense Deleted</h1>
+        <p>The expense has been successfully deleted.</p>
+        <a href="{{ url_for('view_expenses') }}">Go back to expenses</a>
+    </div>
+</body>
+</html>

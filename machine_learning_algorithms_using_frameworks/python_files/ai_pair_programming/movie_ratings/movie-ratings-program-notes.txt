@@ -1,0 +1,32 @@
+Problem: Movie Ratings Analysis
+The script loads a CSV of movie ratings, calculates average ratings, filters based on thresholds, and displays the top-rated movies. It's intentionally written with some repetition, naming issues, and areas that can benefit from AI-guided improvement.
+
+✅ What You Can Show During the Demo
+Ask Copilot to explain a specific line (groupby().mean()).
+
+Trigger JetBrains AI Assistant to summarize the whole class.
+
+Accept a suggestion to use defaultdict (if rewriting the manual version).
+
+Compare before/after performance using pandas vs loop.
+
+Ask it to write a unit test for compute_average_ratings().
+
+
+🛠️ Refactoring Suggestions
+💡 "Consider using pandas for data manipulation instead of manual loops for better performance and readability."
+
+💡 "Use type hints for better code clarity and tooling support."
+
+💡 "Wrap the functionality into a class for easier testing and extension (e.g., filtering by year)."
+
+💡 "Add exception handling for file loading and empty data validation."
+
+👨‍💻 Code Review Suggestions
+🔍 "You can move the file path to a configuration file or command-line argument for more flexibility."
+
+🔍 "Consider adding unit tests for compute_average_ratings to validate with various edge cases like missing ratings or duplicate titles."
+
+🔍 "It might be useful to validate the schema of the CSV file before loading to avoid runtime errors."
+
+

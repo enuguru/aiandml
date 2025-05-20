@@ -1,0 +1,9 @@
+book_manager/
+├── main.py
+├── models/
+│   └── book.py
+├── services/
+│   └── book_service.py
+├── utils/
+│   └── file_handler.py
+└── books_data.txt

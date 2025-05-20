@@ -1,0 +1,26 @@
+Please make the following improvements to the to-do-list project
+
+"Improve the To-Do List Web App by adding a database (SQLite/MySQL)."
+"Add authentication (user login) to the To-Do List Web App."
+"Enhance the UI with JavaScript for real-time task updates."
+"Convert this project into a REST API with Flask."
+Please make the following improvements to the expense tracker project
+
+
+Please make the following improvements to the expense tracker project
+
+"Add an edit button to update expenses."
+"Display a total sum of all expenses."
+"Add user authentication (login/logout) using Flask-Login."
+"Convert the app into a REST API."
+This project introduces basic database handling while still being beginner-friendly. Would you like me to add any extra features?
+
+
+
+
+
+
+
+
+
+

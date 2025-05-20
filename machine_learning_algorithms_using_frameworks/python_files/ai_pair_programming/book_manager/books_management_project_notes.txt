@@ -1,0 +1,12 @@
+
+What all you can try with this book project on github copilot?
+
+Ask Copilot to explain functions or classes in book_service.py
+
+Refactor BookService to use @staticmethod where applicable
+
+Move file I/O to a database adapter (simulate architecture upgrade)
+
+Add typing, error handling, and logging — let AI suggest improvements
+
+Ask JetBrains AI Assistant to generate unit tests

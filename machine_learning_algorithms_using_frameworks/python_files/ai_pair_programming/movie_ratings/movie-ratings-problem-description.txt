@@ -1,0 +1,4 @@
+problem description:
+
+Problem: Movie Ratings Analysis
+The script loads a CSV of movie ratings, calculates average ratings, filters based on thresholds, and displays the top-rated movies. It's intentionally written with some repetition, naming issues, and areas that can benefit from AI-guided improvement

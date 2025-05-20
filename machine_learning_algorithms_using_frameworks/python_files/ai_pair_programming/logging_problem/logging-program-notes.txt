@@ -1,0 +1,22 @@
+💬 AI-Powered Comments You Can Use During the Demo
+🔍 Explanation Prompts
+"Explain the use of Counter in this context"
+
+"Summarize what the extract_errors() method does"
+
+"What is the complexity of the count_error_types() function?"
+
+
+🛠️ Refactoring Prompts
+"Refactor the extract_errors method to use regex for better accuracy"
+
+"Can we avoid appending to a mutable list in extract_errors()?"
+
+
+
+✅ Code Review Suggestions
+"Consider validating the log format before parsing"
+
+"It’s better to configure logging to write to a file in production"
+
+"Wrap file reading with try-except for robustness"

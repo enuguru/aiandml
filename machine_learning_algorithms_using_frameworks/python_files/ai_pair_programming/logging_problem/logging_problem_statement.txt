@@ -1,0 +1,6 @@
+
+Problem Statement for logging
+
+Objective: Parse a log file, extract errors with timestamps, group them by error type, and display the most frequent error types.
+
+This mimics real-world log analysis — something most senior engineers will relate to — and is perfect to show refactoring and AI-assist benefits.

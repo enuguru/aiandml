@@ -1,0 +1,3 @@
+
+Project: Book Management System
+Description: Build a  command-line tool to manage books (add, remove, list, search) using classes, file I/O, and modular code

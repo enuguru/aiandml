@@ -1,7 +1,7 @@
 # Case Study: Employee Salary Management System
 
 ## Objective:
-Build a multi-file Python application using only built-in libraries that allows you to manage employee data, compute taxes, and generate salary reports.
+Build a multi-file Python application using only built-in libraries that allows you to manage employee data, compute taxes, and generate salary reports. create and use the directories give below to write the python files. The file employee.py should be inside models directory, the payroll.py should be inside services directory and so on....
 
 ## Functional Requirements:
 1. Store employee data: name, ID, department, base salary

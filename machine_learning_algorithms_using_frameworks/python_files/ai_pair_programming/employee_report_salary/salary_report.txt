@@ -1,0 +1,4 @@
+Alice (E001) - Net Salary: 57600.0
+Bob (E002) - Net Salary: 40500.0
+Charlie (E003) - Net Salary: 40000.0
+David (E004) - Net Salary: 27000.0

@@ -19,7 +19,7 @@ outputy = dataset.iloc[:,1].values
 #print(inputx)
 
 # step 3: select one thirds of the data for testing and two thirds for training
-input_train, input_test, output_train, output_test = train_test_split(inputx, outputy, test_size = 1/4, random_state = 0)
+input_train, input_test, output_train, output_test = train_test_split(inputx, outputy, test_size = 1/4) #, random_state = 42)
 
 
 # step 4: selecting the simple Linear Regression model
